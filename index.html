@@ -50,7 +50,7 @@
 				<section data-background="background.jpg">
 	<!-- idx = 1 -->
 	<h2>What data do you have?</h2>
-	 <table><tr><td style="width:10%"><i class="fa fa-arrow-left"></i></td><td style="width:40%; text-align:left;">Key-value pairs</td><td style="width:40%; text-align:right;">Items</td><td style="width:10%"><i class="fa fa-arrow-right"></i></td></tr></table>
+	 <table><tr><td><a href="#" onclick="moveLeft(); return false;"><i class="fa fa-arrow-left"></i></a></td><td class="left"><a href="#" onclick="moveLeft(); return false;">Key-value pairs</a></td><td class="right">Items</td><td><i class="fa fa-arrow-right"></i></td></tr></table>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 2 -->
@@ -323,6 +323,12 @@
 	<!-- idx = 79 -->
 	<h2>Use HashMap</h2>
 </section>
+<section data-background="background.jpg">
+	<!-- idx = 255 -->
+	<h1>404</h1>
+	<h2>Well, this is embarrassing, you've found our placeholder slide.</h2>
+	Here, use this link to solve the problem: <a href="/">fixme!</a>
+</section>
 			</div>
 		</div>
 
@@ -354,6 +360,31 @@
 			 }
 			 Reveal.slide(next, 0);
 		 }
+		 function moveLeft() {
+			 var n = Reveal.getIndices().h
+			 var next = leftChild(n-1) + 1;
+			 if(next >= Reveal.getTotalSlides() || isLeafNode()) {
+				 return null;
+			 }
+			 Reveal.slide(next, 0);
+		 }
+
+		 function moveRight() {
+			 var n = Reveal.getIndices().h
+			 var next = rightChild(n-1) + 1;
+			 if(next >= Reveal.getTotalSlides() || isLeafNode()) {
+				 return null;
+			 }
+			 Reveal.slide(next, 0);
+		 }
+
+		 function handleSpaceEnter() {
+			 if(isTitleSlide()) {
+				 // on the first slide - go forward
+				 Reveal.slide(1);
+			 }
+			 return null; // otherwise don't do anything
+		 }
 
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
@@ -370,28 +401,18 @@
 						moveUp();
 					},
 					37: function() { // <-
-						var n = Reveal.getIndices().h
-						var next = leftChild(n-1) + 1;
-						if(next >= Reveal.getTotalSlides() || isLeafNode()) {
-							return null;
-						}
-						Reveal.slide(next, 0);
-					},  // go to the next slide when the ENTER key is pressed
+						moveLeft();
+					},
 			    39: function() { // ->
-						var n = Reveal.getIndices().h
-						var next = rightChild(n-1) + 1;
-						if(next >= Reveal.getTotalSlides() || isLeafNode()) {
-							return null;
-						}
-						Reveal.slide(next, 0);
+						moveRight();
 					},
 			    32: function() { // space
-						  if(isTitleSlide()) {
-								// on the first slide - go forward
-								Reveal.slide(1);
-							}
-							return null; // otherwise don't do anything
+						  handleSpaceEnter();
+					},
+					13: function() { // enter
+						handleSpaceEnter();
 					}
+
 			  },
 
 				transition: 'fade', // none/fade/slide/convex/concave/zoom

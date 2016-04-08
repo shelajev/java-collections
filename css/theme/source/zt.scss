@@ -43,6 +43,15 @@ section.has-light-background {
 	}
 }
 
+.left {
+	text-align: left;
+	width: 40%;
+}
+.right {
+	text-align: right !important;
+	width: 40%;
+}
+
 
 // Theme template ------------------------------
 @import "../template/theme";
