@@ -36,15 +36,12 @@
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
 	</head>
-
 	<body>
-
 		<div class="reveal">
-
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section data-background="background.jpg">
-					<h2>Choosing the right Java collection</h2>
+					<h1>Choosing the right Java collection</h1>
 					<h3>Interactive guide</h3>
 					<p>
 						<small>Created by <a href="http://zeroturnaround.com/rebellabs">RebelLabs by ZeroTurnaround</a> / <a href="http://twitter.com/zeroturnaround">@zeroturnaround</a></small>
@@ -52,1749 +49,279 @@
 				</section>
 				<section data-background="background.jpg">
 	<!-- idx = 1 -->
-	<h1>What data do you have?</h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i> Key value pairs |  Items <i class="fa fa-arrow-right"></i></h3>
-	</p>
+	<h2>What data do you have?</h2>
+	 <table><tr><td style="width:10%"><i class="fa fa-arrow-left"></i></td><td style="width:40%; text-align:left;">Key-value pairs</td><td style="width:40%; text-align:right;">Items</td><td style="width:10%"><i class="fa fa-arrow-right"></i></td></tr></table>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 2 -->
-	<h1>Do you need to query by key or value?</h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i> Yes |  No <i class="fa fa-arrow-right"></i></h3>
-	</p>
+	<h2>Do you need to query by key or value?</h2>
+	<table><tr><td style="width:10%"><i class="fa fa-arrow-left"></i></td><td style="width:40%; text-align:left;">Yes</td><td style="width:40%; text-align:right;">No</td><td style="width:10%"><i class="fa fa-arrow-right"></i></td></tr></table>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 3 -->
-	<h1>Working with primitive types?</h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i> Yes |  No <i class="fa fa-arrow-right"></i></h3>
-	</p>
+	<h2>Working with primitive types?</h2>
+<table><tr><td style="width:10%"><i class="fa fa-arrow-left"></i></td><td style="width:40%; text-align:left;">Yes</td><td style="width:40%; text-align:right;">No</td><td style="width:10%"><i class="fa fa-arrow-right"></i></td></tr></table>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 4 -->
-	<h1>Do you need to find the key by the value? </h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i> Yes |  No <i class="fa fa-arrow-right"></i></h3>
-	</p>
+	<h2>Do you need to find the key by the value? </h2>
+<table><tr><td style="width:10%"><i class="fa fa-arrow-left"></i></td><td style="width:40%; text-align:left;">Yes</td><td style="width:40%; text-align:right;">No</td><td style="width:10%"><i class="fa fa-arrow-right"></i></td></tr></table>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 5 -->
-	<h1>Is iteration in order more important that fast contains / remove operation?</h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i> Iteration in order |  Contains / remove <i class="fa fa-arrow-right"></i></h3>
-	</p>
+	<h2>Is iteration in order more important that fast contains / remove operation?</h2>
+	<table><tr><td style="width:10%"><i class="fa fa-arrow-left"></i></td><td style="width:40%; text-align:left;">Iteration in order</td><td style="width:40%; text-align:right;">Contains / remove</td><td style="width:10%"><i class="fa fa-arrow-right"></i></td></tr></table>
 </section>
 <section data-background="background.jpg" data-leaf-node="true">
 	<!-- idx = 6 -->
-	<h1>Use Fastutil collections like: IntArrayList </h1>
+	<h2>Use Fastutil collections like: IntArrayList </h2>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 7 -->
-	<h1>Is iteration in order more important that fast contains / remove operation?</h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i> Iteration in order |  Contains / remove <i class="fa fa-arrow-right"></i></h3>
-	</p>
+	<h2>Is iteration in order more important that fast contains / remove operation?</h2>
+		<table><tr><td style="width:10%"><i class="fa fa-arrow-left"></i></td><td style="width:40%; text-align:left;">Iteration in order</td><td style="width:40%; text-align:right;">Contains / remove</td><td style="width:10%"><i class="fa fa-arrow-right"></i></td></tr></table>
 </section>
 <section data-background="background.jpg" data-leaf-node="true">
 	<!-- idx = 8 -->
-	<h1>Use Guava BiMap</h1>
+	<h2>Use Guava BiMap</h2>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 9 -->
-	<h1>Do you have duplicate keys? </h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i> Yes |  No <i class="fa fa-arrow-right"></i></h3>
-	</p>
+	<h2>Do you have duplicate keys? </h2>
+<table><tr><td style="width:10%"><i class="fa fa-arrow-left"></i></td><td style="width:40%; text-align:left;">Yes</td><td style="width:40%; text-align:right;">No</td><td style="width:10%"><i class="fa fa-arrow-right"></i></td></tr></table>
 </section>
 <section data-background="background.jpg" data-leaf-node="true">
 	<!-- idx = 10 -->
-	<h1>Use ArrayList&lt;Pair&lt;Key, Value&gt;&gt;</h1>
+	<h2>Use ArrayList&lt;Pair&lt;Key, Value&gt;&gt;</h2>
 </section>
 <section data-background="background.jpg" data-leaf-node="true">
 	<!-- idx = 11 -->
-	<h1>Use HashSet&lt;Pair&lt;Key, Value&gt;&gt;</h1>
+	<h2>Use HashMap&lt;Key, Value&gt;</h2>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 12 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 13 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 14 -->
-	<h1>Iteration in insertion order or something else?</h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i> Insertion order |  Other <i class="fa fa-arrow-right"></i></h3>
-	</p>
+	<h2>Iteration in insertion order or something else?</h2>
+	<table><tr><td style="width:10%"><i class="fa fa-arrow-left"></i></td><td style="width:40%; text-align:left;">Insertion order</td><td style="width:40%; text-align:right;">Other</td><td style="width:10%"><i class="fa fa-arrow-right"></i></td></tr></table>
+</section>
 </section>
 <section data-background="background.jpg" data-leaf-node="true">
 	<!-- idx = 15 -->
-	<h1>Use HashSet</h1>
+	<h2>Use HashSet</h2>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 16 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 17 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg" data-leaf-node="true">
 	<!-- idx = 18 -->
-	<h1>Use Guava MultiMap</h1>
+	<h2>Use Guava MultiMap</h2>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 19 -->
-	<h1>Is iteration order of the values imporant?</h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i> Yes |  No <i class="fa fa-arrow-right"></i></h3>
-	</p>
+	<h2>Is iteration order of the values imporant?</h2>
+	<table><tr><td style="width:10%"><i class="fa fa-arrow-left"></i></td><td style="width:40%; text-align:left;">Yes</td><td style="width:40%; text-align:right;">No</td><td style="width:10%"><i class="fa fa-arrow-right"></i></td></tr></table>
+</section>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 20 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 21 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 22 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 23 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 24 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 25 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 26 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 27 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg" data-leaf-node="true">
 	<!-- idx = 28 -->
-	<h1>Use ArrayList</h1>
+	<h2>Use ArrayList</h2>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 29 -->
-	<h1>Natural order (comparing values) or FIFO (queue)</h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i> Natural order |  FIFO <i class="fa fa-arrow-right"></i></h3>
-	</p>
+	<h2>Natural order (comparing values) or FIFO (queue)</h2>
+	<table><tr><td style="width:10%"><i class="fa fa-arrow-left"></i></td><td style="width:40%; text-align:left;">Natural order</td><td style="width:40%; text-align:right;">FIFO</td><td style="width:10%"><i class="fa fa-arrow-right"></i></td></tr></table>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 30 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 31 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 32 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 33 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 34 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 35 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 36 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 37 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 38 -->
-	<h1>Insertion order or Natural order (comparing keys)?</h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i> Insertion order (FIFO) |  Natural order <i class="fa fa-arrow-right"></i></h3>
-	</p>
+	<h2>Insertion order or Natural order (comparing keys)?</h2>
+	<table><tr><td style="width:10%"><i class="fa fa-arrow-left"></i></td><td style="width:40%; text-align:left;">Insertion order</td><td style="width:40%; text-align:right;">Natural order</td><td style="width:10%"><i class="fa fa-arrow-right"></i></td></tr></table>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 39 -->
-	<h1>Are you using primitive types: int, long, byte?</h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  Yes | No <i class="fa fa-arrow-right"></i></h3>
-	</p>
+	<h2>Are you using primitive types: int, long, byte?</h2>
+<table><tr><td style="width:10%"><i class="fa fa-arrow-left"></i></td><td style="width:40%; text-align:left;">Yes</td><td style="width:40%; text-align:right;">No</td><td style="width:10%"><i class="fa fa-arrow-right"></i></td></tr></table>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 40 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 41 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 42 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 43 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 44 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 45 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 46 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 47 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 48 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 49 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 50 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 51 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 52 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 53 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 54 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 55 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 56 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 57 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg" data-leaf-node="true">
 	<!-- idx = 58 -->
-	<h1>Use PriorityQueue</h1>
+	<h2>Use PriorityQueue</h2>
 </section>
 <section data-background="background.jpg" data-leaf-node="true">
  <!-- idx = 59 -->
-	<h1>Use ArrayDeque</h1>
+	<h2>Use ArrayDeque</h2>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 60 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 61 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 62 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 63 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 64 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 65 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 66 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 67 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 68 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 69 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 70 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 71 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 72 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 73 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 74 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg">
 	<!-- idx = 75 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
 </section>
 <section data-background="background.jpg" data-leaf-node="true">
  <!-- idx = 76 -->
-	<h1>Use LinkedHashMap</h1>
+	<h2>Use LinkedHashMap</h2>
 </section>
 <section data-background="background.jpg" data-leaf-node="true">
 	<!-- idx = 77 -->
-	<h1>Use TreeMap</h1>
+	<h2>Use TreeMap</h2>
 </section>
 <section data-background="background.jpg" data-leaf-node="true">
 	<!-- idx = 78 -->
-	<h1>Use Fastutil collections like Int2IntMap</h1>
+	<h2>Use Fastutil collections like Int2IntMap</h2>
 </section>
 <section data-background="background.jpg" data-leaf-node="true">
 	<!-- idx = 79 -->
-	<h1>Use HashMap</h1>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 80 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 81 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 82 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 83 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 84 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 85 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 86 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 87 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 88 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 89 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 90 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 91 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 92 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 93 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 94 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 95 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 96 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 97 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 98 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 99 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 100 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 101 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 102 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 103 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 104 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 105 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 106 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 107 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 108 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 109 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 110 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 111 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 112 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 113 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 114 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 115 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 116 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 117 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 118 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 119 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 120 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 121 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 122 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 123 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 124 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 125 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 126 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 127 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 128 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 129 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 130 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 131 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 132 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 133 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 134 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 135 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 136 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 137 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 138 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 139 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 140 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 141 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 142 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 143 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 144 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 145 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 146 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 147 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 148 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 149 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 150 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 151 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 152 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 153 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 154 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 155 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 156 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 157 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 158 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 159 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 160 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 161 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 162 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 163 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 164 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 165 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 166 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 167 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 168 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 169 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 170 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 171 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 172 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 173 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 174 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 175 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 176 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 177 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 178 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 179 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 180 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 181 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 182 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 183 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 184 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 185 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 186 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 187 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 188 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 189 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 190 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 191 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 192 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 193 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 194 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 195 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 196 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 197 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 198 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 199 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 200 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 201 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 202 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 203 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 204 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 205 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 206 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 207 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 208 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 209 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 210 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 211 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 212 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 213 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 214 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 215 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 216 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 217 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 218 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 219 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 220 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 221 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 222 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 223 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 224 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 225 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 226 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 227 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 228 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 229 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 230 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 231 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 232 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 233 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 234 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 235 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 236 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 237 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 238 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 239 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 240 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 241 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 242 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 243 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 244 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 245 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 246 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 247 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 248 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 249 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 250 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 251 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 252 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 253 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 254 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
-</section>
-<section data-background="background.jpg">
-	<!-- idx = 255 -->
-	<h1></h1>
-	<p>
-		<h3><i class="fa fa-arrow-left"></i>  |   <i class="fa fa-arrow-right"></i></h3>
-	</p>
+	<h2>Use HashMap</h2>
 </section>
 			</div>
 		</div>
@@ -1819,6 +346,14 @@
 		 function isLeafNode() {
 			 return Reveal.getCurrentSlide().getAttribute("data-leaf-node");
 		 }
+		 function moveUp() {
+			 var n = Reveal.getIndices().h
+			 var next = parent(n-1) + 1;
+			 if(next >= Reveal.getTotalSlides() || next < 0) {
+				 return null;
+			 }
+			 Reveal.slide(next, 0);
+		 }
 
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
@@ -1826,15 +361,13 @@
 				controls: false,
 				progress: false,
 				history: true,
-				center: true,
+				// center: true,
 				keyboard: {
+					38: function() { // up arrow
+						moveUp();
+					},
 					27: function() { // ESC
-						var n = Reveal.getIndices().h
-						var next = parent(n-1) + 1;
-						if(next >= Reveal.getTotalSlides() || next < 0) {
-							return null;
-						}
-						Reveal.slide(next, 0);
+						moveUp();
 					},
 					37: function() { // <-
 						var n = Reveal.getIndices().h
