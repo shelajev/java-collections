@@ -1,7 +1,7 @@
 /**
  * ZT theme for reveal.js. This is the opposite of the 'white' theme.
  *
- * By Hakim El Hattab, http://hakim.se
+ * By Oleg Shelajev,
  */
 
 
@@ -26,13 +26,13 @@ $mainFont: 'Open Sans', Open Sans, sans-serif;
 $headingFont: 'Open Sans', Open Sans, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
-$headingTextTransform: uppercase;
+$headingTextTransform: none;
 $headingFontWeight: 600;
-$linkColor: #42affa;
+$linkColor: #5da6ce;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
-$heading1Size: 2.2em;
+$heading1Size: 2.0em;
 $heading2Size: 1.6em;
 $heading3Size: 1.3em;
 $heading4Size: 1.0em;
